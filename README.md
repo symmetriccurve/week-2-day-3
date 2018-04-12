@@ -11,5 +11,5 @@ In this class we will go over
 
 General Topics
 
-1. Creating mock jsons
-2. Creating mock APIs
+1. Creating mock jsons(https://mockaroo.com/)
+2. Creating mock APIs(http://myjson.com/)
