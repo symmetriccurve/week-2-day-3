@@ -1,7 +1,39 @@
+/* Creating a react component is simpler than it sounds like */
 import React, { Component } from 'react';
+/*First and the for most thing we do is to get the react library,
+  we use a keyword called import to import React library and put it in a variable called
+  React, we also import Component(notice the component is is flower braces because it is a not a main
+  module but a submodule)
 
+  form is another keyword we use. it's simple as english statement
+
+  get eggs from grocery store, instead of get we use import and instead of grocery store we use npm registry
+  )
+
+ */
 class App extends Component {
-    constructor(){ //First LCM
+/*
+    Now we have a react library, which does not do anything until unless we add some more fancy thing to it, like
+    I have a baked cake but no cream and decoration on it.
+
+    I get the baked cake and decorate with extra stuff. which in sense I extend the cake to make it more beautiful
+
+    bakedcake is the component, We need to add somthing on top of it to make it in a way we wanted.
+
+    we do this by keyword extend.
+    class App(This is the component name we are about to create, and this can be anything but with one condtion.
+    should start with capital letter
+  )
+
+*/
+    constructor(){
+      /*
+          constructor is the first and fore most life cycle method when we create a react component.
+          we use this method to create a state of the component.
+          Well what is a State ?
+          To put it simple state is nothing but a piece of data that is actively observed by lifecycle methods
+
+      */
       super()
       this.state = {
         products: [],//initial empty,
@@ -23,10 +55,20 @@ class App extends Component {
           }
         ]
       }
+
+      /*
+
+          Everything that is inside the this.state becomes part of state.
+
+      */
     }
 
     componentWillMount(){ //second LCM
+      /*
 
+          This is the second life cycle method that is called when initialization
+
+      */
     }
 
     render() {// Render must be pure function, no state Changes
